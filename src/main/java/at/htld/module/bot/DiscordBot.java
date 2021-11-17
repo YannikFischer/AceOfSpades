@@ -30,10 +30,10 @@ public class DiscordBot {
      * @param args not used - the discord token is passed via environment variable
      *             DISCORD_TOKEN
      */
-    public static void main(String[] args) {
+    public static void main(String args) {
         String token = System.getProperty("DISCORD_TOKEN");// System.getProperty("DISCORD_TOKEN");
         if (token == null || token.length() == 0) {
-            token = System.getenv("DISCORD_TOKEN");
+            token = args;// System.getenv("DISCORD_TOKEN");
             if (token == null || token.length() == 0) {
                 System.err.println("Discord ist als Environment-Variable nicht gesetzt. Verwende "
                         + " -dDISCORD_TOKEN=${DEIN_TOKEN} oder -e DISCORD_TOKEN=${DEIN_TOKEN} bei Docker run");
