@@ -31,7 +31,7 @@ public class DiscordBot {
      *             DISCORD_TOKEN
      */
     public static void main(String[] args) {
-        String token = "OTA0NzM2ODE1MDc5MDk2Mzkw.YX_30Q.5TN7jkJklOcFwt-wQ84kXbWt_pg";// System.getProperty("DISCORD_TOKEN");
+        String token = System.getProperty("DISCORD_TOKEN");// System.getProperty("DISCORD_TOKEN");
         if (token == null || token.length() == 0) {
             token = System.getenv("DISCORD_TOKEN");
             if (token == null || token.length() == 0) {
