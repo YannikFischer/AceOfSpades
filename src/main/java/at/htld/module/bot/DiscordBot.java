@@ -30,7 +30,7 @@ public class DiscordBot {
      * @param args not used - the discord token is passed via environment variable
      *             DISCORD_TOKEN
      */
-    public static void main(String args) {
+    public static void main(String[] args) {
         String token = System.getProperty("DISCORD_TOKEN");// System.getProperty("DISCORD_TOKEN");
         if (token == null || token.length() == 0) {
             System.getenv("DISCORD_TOKEN");
