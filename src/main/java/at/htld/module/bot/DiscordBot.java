@@ -15,21 +15,7 @@ import discord4j.core.GatewayDiscordClient;
 import discord4j.core.event.domain.message.MessageCreateEvent;
 import discord4j.core.object.entity.Message;
 
-/**
- * Discord Bot - Starting a Discord bot
- *
- * @author KAUF 2021-10-30
- * @see <a href="https://github.com/Discord4J/Discord4J">discord for java
- *      resources</a>
- */
 public class DiscordBot {
-
-    /**
-     * Starting point for the bot
-     * 
-     * @param args not used - the discord token is passed via environment variable
-     *             DISCORD_TOKEN
-     */
     public static void main(String[] args) {
         String token = System.getProperty("DISCORD_TOKEN");// System.getProperty("DISCORD_TOKEN");
         if (token == null || token.length() == 0) {
